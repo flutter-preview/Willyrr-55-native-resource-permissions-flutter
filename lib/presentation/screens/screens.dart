@@ -1,4 +1,11 @@
 
 
-export 'package:miscelaneos/presentation/screens/permissions/permissions_screen.dart';
+
+
 export 'package:miscelaneos/presentation/screens/home/home_screen.dart';
+export 'package:miscelaneos/presentation/screens/permissions/ask_location_screen.dart';
+export 'package:miscelaneos/presentation/screens/permissions/permissions_screen.dart';
+export 'package:miscelaneos/presentation/screens/sensors/compas_screen.dart';
+export 'package:miscelaneos/presentation/screens/sensors/gyroscope_ball_screen.dart';
+export 'package:miscelaneos/presentation/screens/sensors/gyroscope_screen.dart';
+export 'package:miscelaneos/presentation/screens/sensors/magnetometer_screen.dart';
