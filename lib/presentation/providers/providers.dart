@@ -10,3 +10,5 @@ export 'compass/compass_provider.dart';
 export 'sensors/gyroscope_provider.dart';
 export 'sensors/accelerometer_provide.dart';
 export 'sensors/magnetometer_provider.dart';
+
+export 'pokemons/pokemon_list_provider.dart';

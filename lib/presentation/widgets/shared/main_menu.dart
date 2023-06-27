@@ -16,6 +16,7 @@ final menuItems = <MenuItem>[
   MenuItem('Magnetometro', Icons.explore_outlined, '/magnetometer'),
   MenuItem('Giróscopio Ball', Icons.sports_baseball_outlined, '/gyroscope-ball'),
   MenuItem('Brújula', Icons.explore, '/compass'),
+  MenuItem('Pokemons', Icons.catching_pokemon, '/pokemons'),
 ];
 
 class MainMenu extends StatelessWidget {
@@ -69,7 +70,7 @@ class HomeMenuItem extends StatelessWidget {
           children:[
             Icon(icon, color: Colors.white, size: 40),
             const SizedBox(height: 10,),
-            Text(title, textAlign: TextAlign.center, style: const TextStyle(color: Colors.white, fontSize: 13),)
+            Text(title, textAlign: TextAlign.center, style: const TextStyle(color: Colors.white, fontSize: 12),)
           ]
     
         ),

@@ -1,7 +1,6 @@
 
 
 import 'package:go_router/go_router.dart';
-import 'package:miscelaneos/presentation/screens/sensors/accelerometer_screen.dart';
 
 import '../../presentation/screens/screens.dart';
 
@@ -33,6 +32,13 @@ final router = GoRouter(
     GoRoute(
       path: '/compass',
       builder: (context, state) => const CompassScreen()
+    ),
+    GoRoute(
+      path: '/pokemons',
+      builder: (context, state) => const PokemonScreen(),
+      routes: [
+        
+      ]
     ),
 
   ]

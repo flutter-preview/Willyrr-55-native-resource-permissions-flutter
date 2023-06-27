@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:math' show pi;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:miscelaneos/presentation/providers/providers.dart';
 import 'package:miscelaneos/presentation/screens/screens.dart';
@@ -103,7 +102,7 @@ class _CompassState extends State<Compass> {
             
             AnimatedRotation(
               turns: getTurns(), 
-              duration: const Duration(milliseconds: 100),
+              duration: const Duration(milliseconds: 1000),
               curve: Curves.linear,
               child: Image.asset('assets/images/compass/quadrant-1.png'),
             ),
