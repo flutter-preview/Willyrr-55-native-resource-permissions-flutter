@@ -35,9 +35,15 @@ final router = GoRouter(
     ),
     GoRoute(
       path: '/pokemons',
-      builder: (context, state) => const PokemonScreen(),
+      builder: (context, state) => const PokemonsScreen(),
       routes: [
-        
+        GoRoute(
+          path: ':id',
+          builder: (context, state) {
+            final id = state.pathParameters['id'] ?? '1';
+            return PokemonScreen(pokemonId: id);
+          },
+        )
       ]
     ),
 

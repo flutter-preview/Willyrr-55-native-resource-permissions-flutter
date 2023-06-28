@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:miscelaneos/presentation/providers/providers.dart';
 
-class PokemonScreen extends StatelessWidget {
-  const PokemonScreen({super.key});
+class PokemonsScreen extends StatelessWidget {
+  const PokemonsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -92,7 +93,7 @@ class _PolemonGrid extends ConsumerWidget {
       ),
       itemBuilder: (context, index){
          return GestureDetector(
-          // TODO onTap:,
+           onTap: () => context.push('/pokemons/${index +1}'),
            child: Image.network(
             'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png',
             fit: BoxFit.contain,
