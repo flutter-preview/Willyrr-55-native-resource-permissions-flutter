@@ -2,7 +2,7 @@
 
 import 'package:dio/dio.dart';
 import 'package:miscelaneos/domain/domain.dart';
-import 'package:miscelaneos/infrasctructure/mappers/pokemon_mapper.dart';
+import 'package:miscelaneos/infrastructure/mappers/pokemon_mapper.dart';
 
 class PokemonDatasoruceImpl implements PokemonsDatasource{
 
